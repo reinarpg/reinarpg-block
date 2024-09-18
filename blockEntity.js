@@ -1,4 +1,4 @@
-const nbt = require('prismarine-nbt')
+const nbt = require('reinarpg-nbt')
 
 module.exports = registry => {
   if (registry.version.type === 'pc') {

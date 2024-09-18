@@ -2,8 +2,8 @@
 module.exports = loader
 module.exports.testedVersions = ['1.8.8', '1.9.4', '1.10.2', '1.11.2', '1.12.2', '1.13.2', '1.14.4', '1.15.2', '1.16.4', '1.17.1', '1.18.1', 'bedrock_1.17.10', 'bedrock_1.18.0', '1.20']
 
-const nbt = require('prismarine-nbt')
-const mcData = require('minecraft-data')
+const nbt = require('reinarpg-nbt')
+const mcData = require('reinarpg-data')
 const legacyPcBlocksByName = Object.entries(mcData.legacy.pc.blocks).reduce((obj, [idmeta, name]) => {
   const n = name.replace('minecraft:', '').split('[')[0]
   const s = name.split('[')[1]?.replace(']', '') ?? ''
@@ -54,7 +54,7 @@ function matchProperties (block, /* to match against */properties) {
 function loader (registryOrVersion) {
   const registry = typeof registryOrVersion === 'string' ? require('prismarine-registry')(registryOrVersion) : registryOrVersion
   const version = registry.version
-  return provider(registry, { Biome: require('prismarine-biome')(version.minecraftVersion), version })
+  return provider(registry, { Biome: require('reinarpg-biome')(version.minecraftVersion), version })
 }
 
 // not sure how to deal with this workaround at all :/

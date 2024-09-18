@@ -57,7 +57,7 @@ If this block is a block entity, this contains the NBT data for the entity
 
 #### block.blockEntity
 
-Simplified block entity data using prismarine-nbt's simplify() function. Only for reading - data modified here cannot be saved back later.
+Simplified block entity data using reinarpg-nbt's simplify() function. Only for reading - data modified here cannot be saved back later.
 
 #### block.metadata
 
@@ -72,7 +72,7 @@ See http://www.minecraftwiki.net/wiki/Data_values#Data
 
 #### block.biome
 
-A biome instance. See [Biome](https://github.com/prismarinejs/prismarine-biome#api).
+A biome instance. See [Biome](https://github.com/prismarinejs/reinarpg-biome#api).
 
 #### block.signText
 

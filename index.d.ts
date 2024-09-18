@@ -1,6 +1,6 @@
 import { Vec3 } from 'vec3';
-import { Biome } from 'prismarine-biome';
-import { NBT } from 'prismarine-nbt';
+import { Biome } from 'reinarpg-biome';
+import { NBT } from 'reinarpg-nbt';
 import { NormalizedEnchant } from 'reinarpg-item';
 import Registry from 'prismarine-registry';
 import { ChatMessage } from 'prismarine-chat';
@@ -44,7 +44,7 @@ export declare class Block {
 
     /**
      * A biome instance.
-     * @see https://github.com/prismarinejs/prismarine-biome#api.
+     * @see https://github.com/prismarinejs/reinarpg-biome#api.
      */
     biome: Biome;
 

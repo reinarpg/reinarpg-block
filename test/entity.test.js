@@ -1,6 +1,6 @@
 /* eslint-env mocha */
 const assert = require('assert')
-const nbt = require('prismarine-nbt')
+const nbt = require('reinarpg-nbt')
 
 describe('handles block entities', () => {
   for (const version of ['pc_1.15.2', 'bedrock_1.18.0', '1.20']) {

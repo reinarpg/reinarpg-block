@@ -73,7 +73,7 @@ See [doc/API.md](doc/API.md)
 
 ### 1.12.0
 
-* Updated to support `prismarine-registry`. To use, instead of passing a string to prismarine-biome's default function export, pass an instance of `prismarine-registry`.
+* Updated to support `prismarine-registry`. To use, instead of passing a string to reinarpg-biome's default function export, pass an instance of `prismarine-registry`.
 * block entity support
 
 ### 1.11.0
