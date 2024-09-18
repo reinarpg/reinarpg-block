@@ -1,7 +1,7 @@
 import { Vec3 } from 'vec3';
 import { Biome } from 'prismarine-biome';
 import { NBT } from 'prismarine-nbt';
-import { NormalizedEnchant } from 'prismarine-item';
+import { NormalizedEnchant } from 'reinarpg-item';
 import Registry from 'prismarine-registry';
 import { ChatMessage } from 'prismarine-chat';
 

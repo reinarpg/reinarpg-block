@@ -7,7 +7,7 @@ describe('Block From Properties', () => {
   // PC (Java)
   it('spruce half slab: waterlogged, upper (pc_1.16.4)', () => {
     const registry = require('prismarine-registry')('1.16.4')
-    const Block = require('prismarine-block')(registry)
+    const Block = require('reinarpg-block')(registry)
     const spruceSlabId = registry.blocksByName.spruce_slab.id
     const properties = { type: 'top', waterlogged: true }
     const block = Block.fromProperties(spruceSlabId, properties, 0)
@@ -17,7 +17,7 @@ describe('Block From Properties', () => {
   })
   it('Boolean properties are string (1.18.2, ...)', () => {
     const registry = require('prismarine-registry')('1.18.2')
-    const Block = require('prismarine-block')(registry)
+    const Block = require('reinarpg-block')(registry)
     const signId = registry.blocksByName.oak_sign.id
     const sourceProperties = { waterlogged: 'false', rotation: '8' }
 
@@ -29,7 +29,7 @@ describe('Block From Properties', () => {
   // Bedrock
   it('spruce half slab: waterlogged, upper (bedrock_1.17.10)', () => {
     const registry = require('prismarine-registry')('bedrock_1.17.10')
-    const Block = require('prismarine-block')(registry)
+    const Block = require('reinarpg-block')(registry)
     const cauldronId = registry.blocksByName.cauldron.id
     const properties = { cauldron_liquid: 'water', fill_level: 5 }
     const block = Block.fromProperties(cauldronId, properties, 0)
@@ -42,7 +42,7 @@ describe('versions should return block state and properties', () => {
     const e = ver.startsWith('bedrock') ? 'bedrock' : 'pc'
     it(ver, () => {
       const registry = require('prismarine-registry')(ver)
-      const Block = require('prismarine-block')(registry)
+      const Block = require('reinarpg-block')(registry)
 
       // Test that .stateId is set on all versions
       {

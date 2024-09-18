@@ -1,6 +1,6 @@
-# prismarine-block
-[![NPM version](https://img.shields.io/npm/v/prismarine-block.svg)](http://npmjs.com/package/prismarine-block)
-[![Build Status](https://github.com/PrismarineJS/prismarine-block/workflows/CI/badge.svg)](https://github.com/PrismarineJS/prismarine-block/actions?query=workflow%3A%22CI%22)
+# reinarpg-block
+[![NPM version](https://img.shields.io/npm/v/reinarpg-block.svg)](http://npmjs.com/package/reinarpg-block)
+[![Build Status](https://github.com/PrismarineJS/reinarpg-block/workflows/CI/badge.svg)](https://github.com/PrismarineJS/reinarpg-block/actions?query=workflow%3A%22CI%22)
 
 Represent a minecraft block with its associated data
 
@@ -8,7 +8,7 @@ Represent a minecraft block with its associated data
 
 ```js
 const registry = require('prismarine-registry')('1.8')
-const Block = require('prismarine-block')(registry)
+const Block = require('reinarpg-block')(registry)
 
 const stoneBlock = new Block(registry.blocksByName.stone, registry.biomesByName.plains, /* meta */ 0)
 
@@ -29,10 +29,10 @@ See [doc/API.md](doc/API.md)
 ## History
 
 ### 1.17.1
-* [Export Block class declaration (#91)](https://github.com/PrismarineJS/prismarine-block/commit/06ef318525aa92b57b400e0ee899231a4a737bec) (thanks @IceTank)
-* [Bump standard from 16.0.4 to 17.1.0 (#83)](https://github.com/PrismarineJS/prismarine-block/commit/00cb8a9a6b810f1bcf7a6482b9a25554d7c39a70) (thanks @dependabot[bot])
-* [use nmd supportFeature (#60)](https://github.com/PrismarineJS/prismarine-block/commit/83a74fc3877197a6383665f7e121081e54f36e86) (thanks @u9g)
-* [Add command gh workflow allowing to use release command in comments (#90)](https://github.com/PrismarineJS/prismarine-block/commit/e9955a02d44570111ad0f72c52e61c3b1f5be72f) (thanks @rom1504)
+* [Export Block class declaration (#91)](https://github.com/PrismarineJS/reinarpg-block/commit/06ef318525aa92b57b400e0ee899231a4a737bec) (thanks @IceTank)
+* [Bump standard from 16.0.4 to 17.1.0 (#83)](https://github.com/PrismarineJS/reinarpg-block/commit/00cb8a9a6b810f1bcf7a6482b9a25554d7c39a70) (thanks @dependabot[bot])
+* [use nmd supportFeature (#60)](https://github.com/PrismarineJS/reinarpg-block/commit/83a74fc3877197a6383665f7e121081e54f36e86) (thanks @u9g)
+* [Add command gh workflow allowing to use release command in comments (#90)](https://github.com/PrismarineJS/reinarpg-block/commit/e9955a02d44570111ad0f72c52e61c3b1f5be72f) (thanks @rom1504)
 
 ### 1.17.0
 
@@ -164,4 +164,4 @@ See [doc/API.md](doc/API.md)
 
 ### 0.1.0
 
-* Import from mineflayer
+* Import from reinarpg-bot
