@@ -5,7 +5,7 @@ const nbt = require('prismarine-nbt')
 describe('handles block entities', () => {
   for (const version of ['pc_1.15.2', 'bedrock_1.18.0', '1.20']) {
     const registry = require('prismarine-registry')(version)
-    const Block = require('prismarine-block')(registry)
+    const Block = require('reinarpg-block')(registry)
 
     it('creates a block entity on ' + version, () => {
       const chest = Block.fromStateId(registry.blocksByName.chest.defaultState)

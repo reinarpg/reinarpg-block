@@ -6,7 +6,7 @@ const expect = require('expect').default
 describe('Dig time', () => {
   describe('1.15.2', () => {
     const registry = require('prismarine-registry')('1.15.2')
-    const Block = require('prismarine-block')(registry)
+    const Block = require('reinarpg-block')(registry)
     it('dirt by hand', () => {
       const block = Block.fromStateId(registry.blocksByName.dirt.defaultState, 0)
       const time = block.digTime(null, false, false, false)
@@ -16,7 +16,7 @@ describe('Dig time', () => {
 
   describe('bedrock 1.17.10', () => {
     const registry = require('prismarine-registry')('bedrock_1.17.10')
-    const Block = require('prismarine-block')(registry)
+    const Block = require('reinarpg-block')(registry)
 
     it('dirt by hand', () => {
       const block = Block.fromStateId(registry.blocksByName.dirt.defaultState, 0)
@@ -28,7 +28,7 @@ describe('Dig time', () => {
   for (const version of ['1.17', 'bedrock_1.17.10', 'bedrock_1.18.0', '1.20']) {
     describe(version, () => {
       const registry = require('prismarine-registry')(version)
-      const Block = require('prismarine-block')(registry)
+      const Block = require('reinarpg-block')(registry)
       it('instant break stone', () => {
         const block = Block.fromStateId(registry.blocksByName.stone.defaultState, 0)
         const time = block.digTime(
@@ -171,7 +171,7 @@ describe('fromString', () => {
     '1.20': 'minecraft:candle[lit=true]'
   }
   for (const [version, str] of Object.entries(versions)) {
-    const Block = require('prismarine-block')(version)
+    const Block = require('reinarpg-block')(version)
     const block = Block.fromString(str, 0)
     expect(block.getProperties().lit).toBeTruthy()
   }
