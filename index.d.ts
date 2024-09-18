@@ -2,8 +2,8 @@ import { Vec3 } from 'vec3';
 import { Biome } from 'reinarpg-biome';
 import { NBT } from 'reinarpg-nbt';
 import { NormalizedEnchant } from 'reinarpg-item';
-import Registry from 'prismarine-registry';
-import { ChatMessage } from 'prismarine-chat';
+import Registry from 'reinarpg-registry';
+import { ChatMessage } from 'reinarpg-chat';
 
 interface Effect {
     id: number;

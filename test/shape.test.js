@@ -5,7 +5,7 @@ const assert = require('assert')
 
 testedVersions.forEach(version => {
   describe(version, () => {
-    const registry = require('prismarine-registry')(version)
+    const registry = require('reinarpg-registry')(version)
     const blockArray = registry.blocksArray
     const Block = require('reinarpg-block')(registry)
     blockArray.forEach(block => {

@@ -126,7 +126,7 @@ Some blocks may have entity data attached to them. If they do, they contain extr
 
 #### setSignText (front, back) 
 
-Sets the text for the sign, can be plaintext, or array of JSON or prismarine-chat instances.
+Sets the text for the sign, can be plaintext, or array of JSON or reinarpg-chat instances.
 
 
 #### getSignText (): [string, string?]
@@ -138,4 +138,4 @@ Gets the plain text content of the sign, the first item of the array returned an
 Deprecated, returns a plaintext string containing the sign's text
 
 #### set .signText
-Deprecated, sets the text for a sign's text, can be plaintext, or array of JSON or prismarine-chat instances
+Deprecated, sets the text for a sign's text, can be plaintext, or array of JSON or reinarpg-chat instances

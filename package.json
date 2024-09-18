@@ -15,15 +15,15 @@
   },
   "dependencies": {
     "reinarpg-data": "github:reinarpg/reinarpg-data",
-    "reinarpg-biome": "^1.1.0",
-    "prismarine-chat": "^1.5.0",
-    "reinarpg-item": "^1.10.1",
-    "reinarpg-nbt": "^2.0.0",
-    "prismarine-registry": "^1.1.0"
+    "reinarpg-biome": "github:reinarpg/reinarpg-biome",
+    "reinarpg-chat": "github:reinarpg/reinarpg-chat",
+    "reinarpg-item": "github:reinarpg/reinarpg-item",
+    "reinarpg-nbt": "github:reinarpg/reinarpg-nbt",
+    "reinarpg-registry": "^1.1.0"
   },
   "devDependencies": {
     "expect": "^29.1.0",
-    "minecraft-protocol": "^1.30.0",
+    "reinarpg-protocol": "github:reinarpg/reinarpg-protocol",
     "minecraft-wrap": "^1.4.0",
     "mocha": "^10.0.0",
     "reinarpg-block": "file:",

@@ -52,7 +52,7 @@ function matchProperties (block, /* to match against */properties) {
 }
 
 function loader (registryOrVersion) {
-  const registry = typeof registryOrVersion === 'string' ? require('prismarine-registry')(registryOrVersion) : registryOrVersion
+  const registry = typeof registryOrVersion === 'string' ? require('reinarpg-registry')(registryOrVersion) : registryOrVersion
   const version = registry.version
   return provider(registry, { Biome: require('reinarpg-biome')(version.minecraftVersion), version })
 }

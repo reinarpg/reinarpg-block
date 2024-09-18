@@ -4,7 +4,7 @@ const nbt = require('reinarpg-nbt')
 
 describe('handles block entities', () => {
   for (const version of ['pc_1.15.2', 'bedrock_1.18.0', '1.20']) {
-    const registry = require('prismarine-registry')(version)
+    const registry = require('reinarpg-registry')(version)
     const Block = require('reinarpg-block')(registry)
 
     it('creates a block entity on ' + version, () => {

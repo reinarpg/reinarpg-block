@@ -1,4 +1,4 @@
-const registry = require('prismarine-registry')('1.8')
+const registry = require('reinarpg-registry')('1.8')
 const Block = require('reinarpg-block')(registry)
 
 const stoneBlock = new Block(registry.blocksByName.stone, registry.biomesByName.plains, /* meta */ 0)

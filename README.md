@@ -7,7 +7,7 @@ Represent a minecraft block with its associated data
 ## Usage
 
 ```js
-const registry = require('prismarine-registry')('1.8')
+const registry = require('reinarpg-registry')('1.8')
 const Block = require('reinarpg-block')(registry)
 
 const stoneBlock = new Block(registry.blocksByName.stone, registry.biomesByName.plains, /* meta */ 0)
@@ -73,7 +73,7 @@ See [doc/API.md](doc/API.md)
 
 ### 1.12.0
 
-* Updated to support `prismarine-registry`. To use, instead of passing a string to reinarpg-biome's default function export, pass an instance of `prismarine-registry`.
+* Updated to support `reinarpg-registry`. To use, instead of passing a string to reinarpg-biome's default function export, pass an instance of `reinarpg-registry`.
 * block entity support
 
 ### 1.11.0

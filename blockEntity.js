@@ -2,7 +2,7 @@ const nbt = require('reinarpg-nbt')
 
 module.exports = registry => {
   if (registry.version.type === 'pc') {
-    const ChatMessage = require('prismarine-chat')(registry.version.majorVersion)
+    const ChatMessage = require('reinarpg-chat')(registry.version.majorVersion)
 
     function signValueToJSONArray (text) {
       const texts = []
@@ -11,7 +11,7 @@ module.exports = registry => {
         texts.push(...text.split('\n').map((t) => (JSON.stringify({ text: t }))))
       } else if (Array.isArray(text)) {
         for (const t of text) {
-          if (t.toJSON) { // prismarine-chat
+          if (t.toJSON) { // reinarpg-chat
             texts.push(JSON.stringify(t.toJSON()))
           } else if (typeof t === 'object') { // normal JS object
             texts.push(JSON.stringify(t))
