@@ -19,7 +19,7 @@
     "reinarpg-chat": "github:reinarpg/reinarpg-chat",
     "reinarpg-item": "github:reinarpg/reinarpg-item",
     "reinarpg-nbt": "github:reinarpg/reinarpg-nbt",
-    "reinarpg-registry": "^1.1.0"
+    "reinarpg-registry": "github:reinarpg/reinarpg-registry"
   },
   "devDependencies": {
     "expect": "^29.1.0",
